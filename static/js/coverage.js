@@ -56,7 +56,7 @@ function search() {
         'skip': 0
     }
     console.log(data)
-    var url = 'http://127.0.0.1:8888/api/v1/search'
+    var url = 'http://192.168.89.128:8888/api/v1/search'
     http(url, data, 'GET', success, fail)
 }
 

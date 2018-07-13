@@ -72,7 +72,7 @@ function http(url, data, method, success, fail) {
 
 function send_request(){
     var data = get_paramter();
-    var url = "http://127.0.0.1:8888/interface/handler"
+    var url = "http://192.168.89.128:8888/interface/handler"
     http(url, data, "POST", success, fail)
 
 }

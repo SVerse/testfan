@@ -38,7 +38,7 @@ function start(){
         'qps':$('#qps').val(),
         'number':$('#number').val(),
     }
-    url =  "http://127.0.0.1:8888/performance/api";
+    url =  "http://192.168.89.128:8888/performance/api";
     http(url, data, 'POST', success, fail)
 }
 
