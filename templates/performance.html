@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block script %}
+    <script src="/static/js/performance.js"></script>
+{% endblock script %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-5">
+                <div id="editor" style="width:600px; min-height:400px" class="ace_editor">
+from locust import HttpLocust, TaskSet, task
+
+
+class UserBehavior(TaskSet):
+
+    @task(1)
+    def index(self):
+        self.client.get("http://www.testfan.cn/")
+
+    @task(2)
+    def search(self):
+        self.client.get("http://www.testfan.cn/list/2/220.htm")
+
+
+class WebsiteUser(HttpLocust):
+    task_set = UserBehavior
+    min_wait = 1000
+    max_wait = 3000
+                </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-2"></div>
+        <div class="col-xs-12 col-md-6 col-lg-5">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-3">域名：</div>
+                <div class="col-xs-12 col-md-12 col-lg-9">
+                    <input id="host" type="text" placeholder="http://www.testfan.cn/">
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-3">用户：</div>
+                    <div class="col-sm-12 col-md-12 col-lg-9">
+                        <input id="user" type="text" placeholder="5">
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-3">QPS：</div>
+                <div class="col-sm-12 col-md-8 col-lg-9">
+                    <input id="qps" type="text" placeholder="3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">请求数：</div>
+                <div class="col-sm-12 col-md-12 col-lg-9">
+                    <input id="number" type="text" placeholder="15">
+                </div>
+            </div>
+            <div class="row">
+                <input id="send" type="button" value="开始压测">
+            </div>
+        </div>
+    </div>
+{% endblock content %}

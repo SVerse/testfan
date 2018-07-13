@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block content %}
+            <!-- 这里是轮播 -->
+        <div class="row">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item">
+                        <img src="/static/image/carousel/carousel0.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="/static/image/carousel/carousel1.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="/static/image/carousel/carousel2.jpg" alt="Third slide">
+                    </div>
+                    <div class="item active">
+                        <img src="/static/image/carousel/carousel3.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="/static/image/carousel/carousel4.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="/static/image/carousel/carousel5.jpg" alt="Third slide">
+                    </div>
+                    <div class="item">
+                        <img src="/static/image/carousel/carousel6.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <hr>
+
+     <div class="row">
+            <div class="col-lg-4 col-md-12 col-xs-12">
+                <img class="img-rounded img-thumbnail img-responsive"  src="/static/image/python.jpg">
+            </div>
+            <div class="col-lg-8 col-md-12 col-xs-12">
+                <div class="row">
+                    <h2>Python 介绍</h2>
+                </div>
+                <div class="row">
+                    <p>Python具有丰富和强大的库。它常被昵称为胶水语言，能够把用其他语言制作的各种模块（尤其是C/C++）很轻松地联结在一起。常见的一种应用情形是，使用Python快速生成程序的原型（有时甚至是程序的最终界面），然后对其中有特别要求的部分，用更合适的语言改写，比如3D游戏中的图形渲染模块，性能要求特别高，就可以用C/C++重写，而后封装为Python可以调用的扩展类库。需要注意的是在您使用扩展类库时可能需要考虑平台问题，某些可能不提供跨平台的实现。</p>
+                </div>
+                <div class="row">
+                   <a href="https://baike.baidu.com/item/Python/407313?fr=aladdin">更多精彩内容详见</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-lg-8 col-md-12 col-xs-12">
+                <div class="row">
+                    <h2>PC</h2>
+                </div>
+                <div class="row">
+                    <p>随着互联网市场竞争越来越激烈，对软件产品研发效率的要求也越来越高，敏捷开发、Devops等各种思潮正在冲击整个软件行业，市场对于高端测试人才的需求正逐步加大。
+
+很多知名IT企业在招聘软件测试中高端的岗位时，通常会要求具备以下能力：熟悉自动化测试、接口测试等；能够开发辅助测试框架和工具。</p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-12 col-xs-12">
+                <img class="img-rounded img-thumbnail img-responsive" src="/static/image/pc.jpg">
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-lg-4 col-md-12 col-xs-12">
+                <img class="img-rounded img-thumbnail img-responsive" src="/static/image/phone.jpg">
+            </div>
+            <div class="col-lg-8 col-md-12 col-xs-12">
+                <div class="row">
+                    <h2>APP</h2>
+                </div>
+                <div class="row">
+                    <p>由于Python语言的简洁性、易读性以及可扩展性，在国外用Python做科学计算的研究机构日益增多，一些知名大学已经采用Python来教授程序设计课程。例如卡耐基梅隆大学的编程基础、麻省理工学院的计算机科学及编程导论就使用Python语言讲授。众多开源的科学计算软件包都提供了Python的调用接口，例如著名的计算机视觉库OpenCV、三维可视化库VTK、医学图像处理库ITK。而Python专用的科学计算扩展库就更多了，例如如下3个十分经典的科学计算扩展库：NumPy、SciPy和matplotlib，它们分别为Python提供了快速数组处理、数值运算以及绘图功能。因此Python语言及其众多的扩展库所构成的开发环境十分适合工程技术、科研人员处理实验数据、制作图表，甚至开发科学计算应用程序。</p>
+                </div>
+                <div class="row">
+                    <a href="https://baike.baidu.com/item/Python/407313?fr=aladdin">欢迎咨询</a>
+                </div>
+            </div>
+        </div>
+
+{% endblock content %}

@@ -1,0 +1,2 @@
+
+mongod --dbpath "C:\Users\zhaoxuhua\mongodb\data\db"  --logpath "C:\Users\zhaoxuhua\mongodb\data\log\log.txt"
